@@ -28,7 +28,22 @@ User    |
 Customer| find_by_surname
 
 
-## <a name="feature-test"></a> 3. Feature-Test (irb)
+## <a name="feature-test"></a> 3. Feature Test (irb)
+
+Now that we have our **Domain Model** representing our objects and the messages they use to communicate with one another, it's time to **Feature test** !
+
+Feature testing allows us to think about how we expect our objects and messages to work together. What behaviour do we expect from our methods ?
+To test this, we can use a **REPL** (Read-Eval-Print-Loop) such as ````irb````
+
+### Small notes on irb ###
+To start the ````irb```` REPL, we simply type irb in the command line. 
+
+Then we have to ````require````our rb file like so:
+````require './docking_station.rb' ````
+or directly using the shorthand ````-r```` when launching irb like so: ````irb -r ./lib/docking_station.rb ````
+
+Now we can feature test our methods and follow the errors to build our unit test !
+
 
 ## <a name="unit-test"></a> 4. Unit test
 
