@@ -42,9 +42,23 @@ Then we have to ````require````our rb file like so:
 ````require './docking_station.rb' ````
 or directly using the shorthand ````-r```` when launching irb like so: ````irb -r ./lib/docking_station.rb ````
 
-Now we can feature test our methods and follow the errors to build our unit test !
+Now we can feature test our methods and follow the errors like the following to build our unit test:
 
+```
+NameError: uninitialized constant DockingStation
+  from (irb):1
+  from /Users/username/.rvm/rubies/ruby-2.2.2/bin/irb:11:in '<main>'
+```
+> We now know that we have to define this DockingStation class
+
+> Always check the **stack trace** where the error occurred, as well as the **nature** of this error
 
 ## <a name="unit-test"></a> 4. Unit test
+
+It's now time to build our first unit test. To do so, we need a testing framework such as **RSpec**. 
+
+To use RSpec (given that the gem is already installed), we need to initialize it in our directory with the command ```` rspec --init ````. This command initiliazes RSpec and generates for us a spec folder in which we will create all our test files. 
+
+The next step is to ````cd````in the spec directory, and create our first ````file_spec.rb ````. 
 
 ## <a name="refactoring"></a> 5. Refactoring
