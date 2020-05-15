@@ -61,4 +61,23 @@ To use RSpec (given that the gem is already installed), we need to initialize it
 
 The next step is to ````cd````in the spec directory, and create our first ````file_spec.rb ````. 
 
+Here is the basic structure of a spec file:
+
+```
+require '/lib/file.rb'
+
+describe 'Our Class/Object' do
+    it 'should return x' do
+      expect(#our_method). to eq x
+    end
+end
+```
+
+> Always require the rb file associated with our test file
+
+To see more about unit test and RSpec, see this [cheat sheet on rspec basics](./tdd/rspec_basics.md)
+
 ## <a name="refactoring"></a> 5. Refactoring
+After having built our test, obviously there are some time where we got some errors related to our code. This is when we want to **refactor** our code accordingly !
+Refactoring happens not once, but every time we don't pass a test.
+
