@@ -75,7 +75,7 @@ end
 
 > Always require the rb file associated with our test file
 
-To see more about unit test and RSpec, see this [cheat sheet on rspec basics](./tdd/rspec_basics.md)
+To see more about unit test and RSpec, see this [cheat sheet on rspec basics](./rspec_basics.md)
 
 ## <a name="refactoring"></a> 5. Refactoring
 After having built our test, obviously there are some time where we got some errors related to our code. This is when we want to **refactor** our code accordingly !
